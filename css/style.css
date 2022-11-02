@@ -44,11 +44,19 @@ header {
     justify-content: space-between;
 }
 
+header select,
+header button{
+    background-color: #e9e9ed;
+    border-radius: .25rem;
+}
+
 header button{
     padding: .125rem 1.875rem;
-    border-radius: .25rem;
-    background-color: #e9e9ed;
     border: 1px solid #8f8f9d;
+}
+
+header select{
+    width: 10.625rem;
 }
 
 /*---------------
