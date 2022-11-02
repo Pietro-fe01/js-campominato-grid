@@ -24,7 +24,7 @@ button{
 ---------------*/
 header,
 footer{
-    height: 4.375rem;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     padding: 0 1.5625rem;
@@ -50,7 +50,25 @@ header button{
 main{
     flex-grow: 1;
     background-color: #7fffd4;
+    display: flex;
 }
+
+main .cell-container {
+    width: 31.25rem;
+    height: 31.25rem;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .cell-container .cell-item {
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+}
+
 
 /*---------------
     FOOTER
