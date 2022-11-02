@@ -29,6 +29,7 @@ function checkSelectValue(select){
 ---------------*/
 const cellContainer = document.querySelector(".cell-container");
 const playGameButton = document.getElementById("play-game");
+const infoGameButton = document.getElementById("info-button");
 const selectBody = document.getElementById("select-body");
 
 /*L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
@@ -37,7 +38,7 @@ Se non si sceglie la difficoltà, il gioco non parte.*/
 
 playGameButton.addEventListener("click", function(){
     if(selectBody.value === "default"){
-        alert("Attenzione! Scegli la difficoltà!");
+        infoGameButton.classList.remove("d-none");
     } else {
         cellContainer.innerHTML = "";
         for(let i=1; i<= checkSelectValue(selectBody); i++){
