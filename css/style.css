@@ -20,6 +20,13 @@ button{
 }
 
 /*---------------
+    UTILITIES
+---------------*/
+.blue-bg-color{
+    background-color: blue;
+}
+
+/*---------------
     COMMON
 ---------------*/
 header,
@@ -59,6 +66,7 @@ main .cell-container {
     margin: auto;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 main .cell-container .cell-item {
@@ -68,7 +76,6 @@ main .cell-container .cell-item {
     text-align: center;
     line-height: 3.125rem;
 }
-
 
 /*---------------
     FOOTER
