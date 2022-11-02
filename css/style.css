@@ -10,4 +10,48 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*---------------
+    COMMON
+---------------*/
+header,
+footer{
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5625rem;
+}
+
+/*---------------
+    HEADER
+---------------*/
+header {
+    justify-content: space-between;
+}
+
+header button{
+    padding: .125rem 1.875rem;
+    border-radius: .25rem;
+    background-color: #e9e9ed;
+    border: 1px solid #8f8f9d;
+}
+
+/*---------------
+    MAIN
+---------------*/
+main{
+    flex-grow: 1;
+    background-color: #7fffd4;
+}
+
+/*---------------
+    FOOTER
+---------------*/
