@@ -3,6 +3,17 @@
 /*---------------
     FUNCTIONS
 ---------------*/
+
+/* Bonus: Aggiungere una select accanto al bottone di generazione, che fornisca una 
+scelta tra tre diversi livelli di difficoltà:
+- con difficoltà 1 (insane) => 100 caselle, con un numero compreso tra 1 e 100, divise
+ in 10 caselle per 10 righe;
+
+- con difficoltà 2 (hard) => 81 caselle, con un numero compreso tra 1 e 81, divise
+ in 9 caselle per 9 righe;
+
+- con difficoltà 3 (normal) => 49 caselle, con un numero compreso tra 1 e 49, divise
+ in 7 caselle per 7 righe; */
 function checkSelectValue(select){
     if (select.selectedIndex === 1){
         return 49;
@@ -19,7 +30,6 @@ function checkSelectValue(select){
 const cellContainer = document.querySelector(".cell-container");
 const playGameButton = document.getElementById("play-game");
 const selectBody = document.getElementById("select-body");
-selectBody.insane = 100;
 
 /*L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
 Ogni cella ha un numero progressivo, da 1 a 100.
@@ -52,15 +62,3 @@ playGameButton.addEventListener("click", function(){
         }
     } 
 });
-
-
-/* Bonus: Aggiungere una select accanto al bottone di generazione, che fornisca una 
-scelta tra tre diversi livelli di difficoltà:
-- con difficoltà 1 (insane) => 100 caselle, con un numero compreso tra 1 e 100, divise
- in 10 caselle per 10 righe;
-
-- con difficoltà 2 (hard) => 81 caselle, con un numero compreso tra 1 e 81, divise
- in 9 caselle per 9 righe;
-
-- con difficoltà 3 (normal) => 49 caselle, con un numero compreso tra 1 e 49, divise
- in 7 caselle per 7 righe; */
