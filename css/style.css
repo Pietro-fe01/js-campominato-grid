@@ -79,8 +79,9 @@ main .cell-container {
 
 main .cell-container .cell-item {
     border: 1px solid black;
-    text-align: center;
-    line-height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .difficulty-insane{
